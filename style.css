@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+
+/*  ============= header ============= */
+header {
+  position: fixed;
+  width: 100%;
+}
+header .wrap {
+  padding: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a img {
+  width: 200px;
+  height: 70px;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 70px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.nav-link:hover {
+  color: #b59f6b;
+}
+
+.nav-link.active {
+  color: #b59f6b; /* Your desired active color */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: #000000;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #b59f6b;
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* ============= Banner ============= */
+.banner {
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("https://www.village-bali.com/wp-content/uploads/2024/03/village-drone.jpeg"); */
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/village-drone.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-content {
+  padding: 0 10%;
+}
+.title {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+}
+
+.sub-title {
+  margin-top: 20px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sub-title2 {
+  margin-top: 20px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+}
+
+.line{
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Center the button vertically, if needed */
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin: 30px 10px;
+  width: 50%;
+}
+
+  .success {
+    border-color: #ffffff;
+    color: rgb(255, 255, 255);
+    background-color: #b59f6b;
+  }
+  
+  .success:hover {
+    background-color: #ffffff;
+    color: #b59f6b;
+    font-style: underline;
+  }
+
+  /* ============= Discover ============= */
+  .discover {
+    display: flex;  /* Set section as flex container */
+    justify-content: space-between; /* Space between left and right side */
+    align-items: center; /* Center align items vertically */
+    padding: 10px; /* Optional padding for the section */
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .left-side{
+    margin-left: 70px;
+    flex-basis: 60%
+  }
+
+.left-side h2 {
+  width: auto;
+  height: 120px;
+  margin-top: 100px;
+  margin-left: 90px;
+  margin-right: 80px;
+  font-size: 40px;
+  font-weight: 460;
+  margin-bottom: 20px;
+}
+
+.left-side p{
+  width: 300px;
+  height: 120px;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-left: 90px;
+  color: black;
+  text-align: justify;
+  font-style: normal;
+}
+
+.left-side img{
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-left: 90px;
+  margin-bottom: 20px;
+}
+
+.right-side{
+  flex-basis: 50%;
+  margin-right: 70px;
+  margin-left: -20px;
+}
+
+.right-side img{
+  width: 600px;
+  height: 450px;
+  border-radius: 30px;
+}
+
+/* ============= Our Room ============= */
+.our-room {
+  padding: 10%;
+  background: #f5f4f0;
+}
+
+.title-section {
+  text-align: center;
+}
+
+.card-wrapper {
+  display: flex;
+  padding-top: 26px;
+  justify-content: space-between; /* Space between cards */
+  flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+}
+
+.card {
+  width: 30%; /* Adjust the width as needed */
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h5 {
+  text-align: center;
+}
+
+.card h5 a {
+  color: #b49f6b;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.card p {
+  font-size: 14px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.booking-form {
+  margin-top: 50px;
+  background-color: #f5f4f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 10; /* Ensure it stretches full width */
+}
+
+.our-room {
+  padding: 1000; /* Remove padding to allow the card to stretch */
+}
+
+.form-row {
+  display: flex;
+  align-items: center; /* Align items to the center */
+  gap: 20px; /* Space between items */
+  flex-wrap: nowrap; /* Prevent wrapping to next line */
+}
+
+.form-group {
+  flex: 1;
+  min-width: 150px; /* Minimum width for each input group */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Make input fill the container */
+}
+
+.book-now {
+  background-color: #755200;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevent text from wrapping */
+  align-self: flex-end; /* Align button to the end */
+}
+
+.book-now:hover {
+  background-color: #b59f6b;
+}
+
+/* ============= Destination ============= */
+
+.left-side h5 {
+  margin-top: 50px; /* Reduce the top margin */
+  margin-left: 90px;
+  margin-right: 80px;
+  font-size: 24px; /* Adjust font size if needed */
+  margin-bottom: 0px; /* Reduce the bottom margin */
+}
+
+.destination {
+  margin: 0; /* Ensure no extra margin */
+  padding: 0; /* Ensure no extra padding */
+  font-size: 18px; /* Adjust font size if needed */
+  text-decoration: underline
+}
+
+.explore {
+  margin-top: 0; /* Remove any top margin */
+  padding-top: 10px; /* Add padding instead if needed */
+}
+
+.attraction {
+  margin-top: 0px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+}
+
+.viewContainer {
+  display: flex; /* Set the container as a flexbox */
+  justify-content: center; /* Optional: Center the images horizontally */
+  gap: 10px; /* Optional: Add some space between the images */
+}
+
+.viewContainer img {
+  max-width: 100%; /* Ensure images scale within their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* ============= Visit ============= */
+
+.visitDiv {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/upview.jpg');
+  background-size: cover; /* Ensures the background image covers the entire area */
+  background-position: center; /* Centers the background image */
+  text-align: left; /* Align text to the left */
+  padding-top: 50px; /* Adds space above the content */
+  padding-left: 90px; /* Adds space to the left side */
+  padding-right: 20px; /* Optional: Adds some space on the right side */
+  padding-bottom: 80px; /* Optional: Adds some space below the content */
+  color: white; /* Adjust text color to be readable over the background */
+}
+
+.visit {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 90px;
+}
+
+.visitDiv h2.visit {
+  font-size: 30px; /* Adjust font size as needed */
+  margin-bottom: 60px; /* Space between heading and paragraph */
+}
+
+.visitDiv p.located {
+  font-size: 16px; /* Adjust font size as needed */
+  margin-bottom: 60px; /* Space between paragraph and button */
+  max-width: 600px; /* Optional: limit the width of the paragraph */
+  text-align: justify;
+}
+
+.discoverBtn {
+  padding: 20px 40px;             /* Spacing inside the button */
+  font-size: 15px;                /* Font size for the button text */
+  background-color: #b59f6b;      /* Button background color */
+  color: white;                   /* Button text color */
+  border: 10px;                   /* Remove default border */
+  border-radius: 20px;             /* Rounded corners */
+  cursor: pointer;                /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.discoverBtn:hover {
+  background-color: #a08555;      /* Slightly darker background on hover */
+}
+
+/* ============= Footer ============= */
+
+footer {
+  background-color: #2a2a2a;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h3 {
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  margin-left: 50px;
+  margin-bottom: 8px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 10px);
+  margin-bottom: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #777;
+}
+
+.footer-bottom small {
+  color: #ffffff;
+}
+
+.p-footer-email{
+  color: #b59f6b;
+}
+
+.p-footer-phone{
+  color: #b59f6b;
+}
+
+.a-footer-phone{
+  color: #ffffff;
+}
+
+.a-footer-phone:hover{
+  color: #b59f6b;
+}
+
+.copyright{
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #b49f6b;
+  color: rgb(0, 0, 0);
+}
+
+/* Twitter */
+.fa-instagram {
+  background: #b49f6b;
+  color: rgb(0, 0, 0);
+}
+
+
+/* 1 ~ 420 px */
+@media (max-width: 420px) {
+  /* .title {
+    color: red;
+    font-size: 12px;
+  } */
+}

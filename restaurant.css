@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+  }
+  
+  /*  ============= header ============= */
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  header .wrap {
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+  }
+  
+  header a img {
+    width: 200px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 70px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav-link {
+    color: black;
+    text-decoration: none;
+    padding: 14px 20px;
+    text-transform: uppercase;
+    font-family: "Karla", sans-serif;
+    letter-spacing: 1.5px;
+  }
+  
+  .nav-link:hover {
+    color: #b59f6b;
+  }
+  
+  .nav-link.active {
+    color: #b59f6b; /* Your desired active color */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: #000000;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    color: #b59f6b;
+  }
+  
+  .nav-item.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Main */
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full-screen height */
+    overflow: hidden;
+  }
+  
+  
+  .carousel-slides {
+    position: relative;
+    width: 300%; /* Adjust based on number of images */
+    height: 100%;
+  }
+  
+  .carousel-slides img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 15s infinite;
+  }
+  
+  /* Keyframes for fade transition */
+  @keyframes fade {
+    0% { opacity: 1; }
+    33% { opacity: 1; }
+    38% { opacity: 0; }
+    95% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  /* Adjust timing for each image */
+  .carousel-image:nth-child(2) {
+    animation-delay: 5s;
+  }
+  
+  .carousel-image:nth-child(3) {
+    animation-delay: 10s;
+  }
+
+  /* Container to hold both sides */
+.container {
+    display: flex;
+    justify-content: space-between; /* Space between left and right side */
+    align-items: center; /* Center content vertically */
+    padding: 20px;
+    height: 100vh; /* Full viewport height */
+    background-color: #f3f3f3;
+    padding-top: 70px;
+    padding-left: 100px;
+}
+
+/* Left side styles */
+.left-side {
+    flex: 1; /* Take up available space */
+    max-width: 50%; /* Maximum width to avoid taking full width */
+    padding-right: 20px; /* Space between left and right side */
+}
+
+.h2-enjoy {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.h2-enjoy span {
+    color: #b59f6b;
+}
+
+.p-with,
+.p-our {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.menu {
+    background-color: #b59f6b;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Right side styles */
+.right-side {
+    flex: 1;
+    max-width: 50%; /* Maximum width to avoid taking full width */
+    padding-left: 20px;
+}
+
+/* Polaroid container */
+.polaroid-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Align polaroids to the right */
+    gap: -20px; /* Overlap polaroids */
+    margin-right: 50px;
+}
+
+/* Basic polaroid styles */
+.polaroid {
+    width: 400px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* For correct overlap positioning */
+}
+
+/* Adjust image styles */
+.polaroid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Position and rotation for the polaroids */
+.polaroid-1 {
+    z-index: 1;
+}
+
+.polaroid-2 {
+    margin-top: -20px; /* Adjust to make picture 2 slightly higher */
+}
+
+/* Container to hold both sides */
+.container2 {
+    display: flex;
+    justify-content: space-between; /* Space between left and right side */
+    align-items: flex-start; /* Align items at the start */
+    padding: 20px;
+    height: 100vh; /* Full viewport height */
+    background-color: #f3f3f3;
+}
+
+/* Left side styles */
+.left-side2 {
+    position: relative;
+    width: 50%; /* Take up half the width */
+    height: 100%; /* Full height */
+}
+
+/* Polaroid container and individual polaroids */
+.polaroid-container2 {
+    position: relative;
+    height: 100%; /* Full height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    gap: 10px; /* Space between polaroids */
+    margin-top: 100px;
+}
+
+/* General polaroid styles */
+.polaroidtwo {
+    position: relative; /* Allows for overlapping positioning */
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 150px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.polaroidtwo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Positioning for each polaroid */
+.polaroid-3,
+.polaroid-4 {
+    width: 150px; /* Ensure both are the same size */
+}
+
+.polaroid-3 {
+    margin-top: 0px;
+    margin-right: 200px; /* Overlap with polaroid-4 */
+    width: 300px;
+}
+
+.polaroid-4 {
+    margin-left: 300px;
+    margin-top: -320px; /* Create space for polaroid-3 */
+    width: 300px;
+}
+
+.polaroid-5 {
+    position: absolute;
+    margin-top: 400px;
+    margin-right: 500px;
+    left: 70%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the image horizontally */
+    width: 300px; /* Adjust width */
+    z-index: 1; /* Bottom layer */
+}
+
+/* Right side styles */
+.right-side2 {
+    flex: 1; /* Take up available space */
+    max-width: 50%; /* Maximum width to avoid taking full width */
+    padding-left: 20px; /* Space between left and right side */
+    margin-top: 260px;
+}
+
+.h2-eat {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.p-best {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #b49f6b;
+}
+
+.menu2 {
+    background-color: #b59f6b;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.container3 {
+  display: flex;
+  justify-content: space-between; /* Space between left and right side */
+  align-items: flex-start; /* Align items at the start */
+  padding: 20px;
+  height: 100vh; /* Full viewport height */
+  background-color: #f3f3f3;
+  padding-right: 100px;
+}
+
+.left-side3 {
+  position: relative;
+  width: 50%; /* Take up half the width */
+  height: 100%; /* Full height */
+  margin-right: 20px;
+}
+
+.p-restaurant {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #b49f6b;
+  margin-left: 100px;
+}
+
+.h2-discount {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-left: 100px;
+}
+
+.p-get {
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.list-container {
+  width: 80%;
+  margin-left: 100px; 
+}
+
+.horizontal-list{
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+  gap: 7px; /* Space between items */
+}
+
+.horizontal-list li{
+  margin-right: 20px;
+  margin-bottom: 10px; /* Space between items vertically */
+}
+
+.horizontal-list li::before{
+  content: '';
+  display: inline-block; /* Ensures the pseudo-element behaves as a block-level element */
+  background-image: url('./assets/cloche.png');
+  background-size: contain; /* Ensures the image scales within its container */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  width: 16px; /* Adjust as needed */
+  height: 16px; /* Adjust as needed */
+  margin-right: 5px; /* Space between icon and text, if desired */
+}
+
+.list-container2 {
+  width: 80%;
+  margin-left: 100px; 
+}
+
+.horizontal-list2{
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+  gap: 7px; /* Space between items */
+}
+
+.horizontal-list2 li{
+  margin-right: 20px;
+  margin-bottom: 10px; /* Space between items vertically */
+}
+
+.horizontal-list2 li::before{
+  content: '';
+  display: inline-block; /* Ensures the pseudo-element behaves as a block-level element */
+  background-image: url('./assets/cloche.png');
+  background-size: contain; /* Ensures the image scales within its container */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  width: 16px; /* Adjust as needed */
+  height: 16px; /* Adjust as needed */
+  margin-right: 5px; /* Space between icon and text, if desired */
+}
+
+.right-side3{
+  flex-basis: 50%;
+  margin-right: 10px;
+  margin-left: 200px;
+}
+
+.people{
+  width: 600px;
+  height: 400px;
+}
+  /* ============= Footer ============= */
+
+footer {
+    background-color: #2a2a2a;
+    padding: 20px;
+    color: #ffffff;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 50px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .footer-section h3 {
+    margin-left: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p {
+    margin-left: 50px;
+    margin-bottom: 8px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .gallery-item {
+    flex: 1 1 calc(33.333% - 10px);
+    margin-bottom: 10px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #777;
+  }
+  
+  .footer-bottom small {
+    color: #ffffff;
+  }
+
+  .p-footer-email{
+    color: #b59f6b;
+  }
+  
+  .p-footer-phone{
+    color: #b59f6b;
+  }
+  
+  .a-footer-phone{
+    color: #ffffff;
+  }
+  
+  .a-footer-phone:hover{
+    color: #b59f6b;
+  }
+  
+  .copyright{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #b49f6b;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Twitter */
+  .fa-instagram {
+    background: #b49f6b;
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  /* 1 ~ 420 px */
+  @media (max-width: 420px) {
+    /* .title {
+      color: red;
+      font-size: 12px;
+    } */
+  }

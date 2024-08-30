@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Village</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font Family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .nav-link.active {
+        color: #b59f6b; /* Your desired active color */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <a href="">
+          <img src="./assets/village-bali-website-white-logo.png" alt="" />
+        </a>
+        <nav class="navbar">
+          <div class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link">Our Rooms</a>
+            <div class="dropdown-content">
+              <a href="superiorKing.html" class="nav-link">SUPERIOR KING</a>
+              <a href="#" class="nav-link">DELUXE QUEEN ROOM</a>
+              <a href="#" class="nav-link">KING DELUXE OR TWIN ROOM WITH BATHTUB</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="restaurant.html" class="nav-link">Restaurant & Bar</a>
+          </div>
+          <!-- <div class="nav-item dropdown">
+            <a href="#" class="nav-link">Services</a>
+            <div class="dropdown-content">
+              <a href="#">MASSAGE</a>
+              <a href="#">YOGA</a>
+              <a href="#">LAUNDRY</a>
+              <a href="#">TRANSPORT SERVICES</a>
+              <a href="#">AIRPORT PICK UP</a>
+            </div>
+          </div> -->
+          <!-- <div class="nav-item">
+            <a href="#" class="nav-link">Surf</a>
+          </div> -->
+          <div class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="banner-content">
+          <h2 class="title">BOOK HERE</h2>
+          <p class="sub-title">Grab the Lowest Prices Available</p>
+          <hr class="line" />
+          <p class="sub-title2">If you find a better daily rate online, we'll match the price.</p>
+          <div class="btn-container">
+            <button class="btn success" onclick="window.location.href='./booking.html'">Book Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="discover">
+        <div class="left-side">
+          <!-- left side -->
+          <h2 class="discovery">DISCOVER OUR<br><span>STORY</span></h2>
+          <p class="sub-title2">
+            Located in Uluwatu, 200 m from Impossible Beach, Village Bali provides accommodation with an outdoor swimming pool, free private parking, a bar and a garden.
+          </p>
+          <img class="logo2" src="./assets/logo2.png" alt="" />
+        </div>
+          <!-- right side -->
+        <div class="right-side">
+          <img class="villaGrid" src="./assets/villaGrid.png" alt="" />
+        </div>
+      </section>
+
+      <section class="our-room">
+        <h2 class="title-section">Our Room</h2>
+        <div class="card-wrapper">
+          <div class="card">
+            <img src="./assets/room.jpg" alt="" />
+            <h5><a href="#">Deluxe Queen room</a></h5>
+            <p>
+              This double room has a minibar, lounge chair, private garden and
+              air conditioning.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/room2.jpg" alt="" />
+            <h5><a href="#">Superior King private</a></h5>
+            <p>
+              This double room has a minibar, private entrance and air conditioning.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/room3.jpg" alt="" />
+            <h5><a href="#">King Deluxe or Twin Room with bathtub</a></h5>
+            <p>
+              This twin/double room features air conditioning, private entrance and minibar.
+            </p>
+          </div>
+
+          
+        </div>
+        <section class="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkin">Check-in:</label>
+              <input type="date" id="checkin" name="checkin">
+            </div>
+            <div class="form-group">
+              <label for="checkout">Check-out:</label>
+              <input type="date" id="checkout" name="checkout">
+            </div>
+            <div class="form-group">
+              <label for="promo-code">Promo Code:</label>
+              <input type="text" id="promo-code" name="promo-code" placeholder="Enter promo code">
+            </div>
+            <button class="book-now">Book Now</button>
+          </div>
+        </section>        
+      </section>
+
+      <section class="discover">
+        <div class="left-side">
+          <!-- left side -->
+          
+          <h5 class="destination">Destination</h5>
+          <h2 class="explore">EXPLORE ULUWATU</span></h2>
+          <p class="attraction">
+            Attractions in the area include Uluwatu Temple, 5 km away, or Suluban Uluwatu Beach, situated 4.2 km from the property.
+          </p>
+        </div>
+          <!-- right side -->
+        <div class="right-side">
+          <div class="viewContainer">
+            <img class="villaGrid2" src="./assets/view1.jpg" alt="" />
+            <img class="villaGrid3" src="./assets/view2.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="visitDiv">
+          <h2 class="visit">VISIT OUR FANTASTIC VILLAS</h2>
+          <p class="located">Located in Uluwatu, 200 m from Impossible Beach, Village Bali provides accommodation with an outdoor swimming pool, free private parking, a bar and a garden.</p>
+          <div class="btn-container2">
+            <button class="discoverBtn" onclick="window.location.href='./booking.html'">DISCOVER OUR ROOM</button>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section contact-us">
+          <h3>CONTACT US</h3>
+          <p>Jl. Pemutih, Pecatu, Kec. Kuta Sel., Kabupaten Badung, Bali 80361</p>
+          <p class="p-footer-email">E-mail: villagebali@outlook.com</p>
+          <p class="p-footer-phone">Phone: <a href="tel:+6281237523203" class="a-footer-phone">+62 81237523203</a></p>
+        </div>
+    
+        <div class="footer-section our-story">
+          <h3>OUR STORY</h3>
+          <p>Located in Uluwatu, 200 m from Impossible Beach, Village Bali provides accommodation with an outdoor swimming pool, free private parking, a bar, and a garden.</p>
+        </div>
+    
+        <div class="footer-section gallery">
+          <a href="#" class="gallery-item"><img src="./assets/footer1.jpg" alt="Gallery Image 1"></a>
+          <a href="#" class="gallery-item"><img src="./assets/footer2.jpg" alt="Gallery Image 2"></a>
+          <a href="#" class="gallery-item"><img src="./assets/footer3.jpg" alt="Gallery Image 3"></a>
+          <a href="#" class="gallery-item"><img src="./assets/footer4.jpg" alt="Gallery Image 4"></a>
+          <a href="#" class="gallery-item"><img src="./assets/footer5.jpg" alt="Gallery Image 5"></a>
+          <a href="#" class="gallery-item"><img src="./assets/footer6.jpg" alt="Gallery Image 6"></a>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <small class="copyright">&copy; 2024 Village Bali</small>
+        <div class="social-media">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+     document.querySelectorAll(".nav-link").forEach((link) => {
+    if (link.href === window.location.href) {
+      console.log("link.href: ", link.href);
+      console.log("window.location.href: ", window.location.href);
+        link.classList.add("active");
+        link.setAttribute("aria-current", "page");
+    }
+});
+
+    </script>
+  </body>
+</html>
